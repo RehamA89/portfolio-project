@@ -13,15 +13,9 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font-family);
-}
-.hero {
-  background-color: var(--secondary-color);
-  background-image: url("/images/leaves.jpg");
-  text-align: center;
-  padding-top: 20px;
-  padding: 100px 20px;
   color: var(--branding-color);
 }
+
 p {
   font-family: var(--default-font-family);
   margin: 10px 50px;
@@ -31,10 +25,18 @@ p {
   color: var(--branding-color);
 }
 
+.hero {
+  background-color: var(--secondary-color);
+  background-image: url("/images/leaves.jpg");
+  text-align: center;
+  padding-top: 20px;
+  padding: 100px 20px;
+}
 .hero p {
   font-family: var(--default-font-family);
   font-size: 36px;
   font-weight: bold;
+  color: var(--branding-color);
 }
 
 .hero h1 {
@@ -73,4 +75,29 @@ p {
 .navbar {
   font-family: var(--default-font-family);
   color: white;
+}
+.about h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.emoji-1,
+.emoji-2,
+.emoji-3 {
+  margin-top: 100px;
+  margin-bottom: 15px;
+  transform: scale(2);
+}
+
+.label {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--branding-color);
+}
+.text {
+  font-family: var(--default-font-family);
+  font-size: 18px;
 }
