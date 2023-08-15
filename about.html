@@ -55,9 +55,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-warning" aria-current="page" href="/"
-                >Home</a
-              >
+              <a class="nav-link text-warning" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a
@@ -68,7 +66,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="#">Portfolio</a>
+              <a class="nav-link text-warning" href="/projects.html"
+                >Projects</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-warning" href="#">Connect</a>
@@ -77,28 +77,47 @@
         </div>
       </div>
     </nav>
-    <div class="about"><h1 class="bolder">About</h1></div>
+    <div class="page-title"><h1 class="bolder">About</h1></div>
+    <div class="about-content">
+      <img
+        class="img-fluid self-pic"
+        src="/images/self-pic.jpg"
+        alt="myself in a garden"
+      />
+      <!-- <div class="verticle-line"></div> -->
+      <p class="text-center" id="about-text">
+        Hi, I'm Reham, a passionate front-end developer bringing you programming
+        from the future! My expertise is developing applications that simplify
+        everyday tedious tasks or for tackling more serious issues in hopes of
+        making a real difference for my community. I strive for users to have an
+        intuitive experience. Let's make something special!
+      </p>
+
+      <a href="/projects.html"
+        ><button class="btn btn-explore">Explore my Projects</button></a
+      >
+    </div>
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-4">
-          <i class="fa-solid fa-forward emoji-1"></i>
-          <div class="label">Fast</div>
-          <div class="text">
+        <div class="col-md-4">
+          <i class="fa-solid fa-forward emoji"></i>
+          <div class="characteristics-label">Fast</div>
+          <div class="characteristics-text">
             Fast load times and lag-free interaction are my top priorities.
           </div>
         </div>
-        <div class="col-4">
-          <i class="fa-solid fa-laptop emoji-2 m-3"></i>
-          <i class="fa-solid fa-mobile-screen-button emoji-2"></i>
-          <div class="label">Resonsive</div>
-          <div class="text">
+        <div class="col-md-4">
+          <i class="fa-solid fa-laptop emoji m-3"></i>
+          <i class="fa-solid fa-mobile-screen-button emoji"></i>
+          <div class="characteristics-label">Responsive</div>
+          <div class="characteristics-text">
             My layouts will work on any device, big or small.
           </div>
         </div>
-        <div class="col-4">
-          <i class="fa-solid fa-brain emoji-3"></i>
-          <div class="label">Intuitive</div>
-          <div class="text">
+        <div class="col-md-4">
+          <i class="fa-solid fa-brain emoji"></i>
+          <div class="characteristics-label">Intuitive</div>
+          <div class="characteristics-text">
             Definite preference for user-friendly, intuitive UI.
           </div>
         </div>

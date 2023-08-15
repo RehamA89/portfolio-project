@@ -1,3 +1,13 @@
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
 :root {
   --branding-color: #8c3333;
   --secondary-color: #ffc107;
@@ -25,6 +35,9 @@ p {
   color: var(--branding-color);
 }
 
+.active {
+  text-shadow: rgb(254, 233, 131) 1px 0 10px;
+}
 .hero {
   background-color: var(--secondary-color);
   background-image: url("/images/leaves.jpg");
@@ -51,10 +64,9 @@ p {
   font-weight: bold;
   margin-bottom: 50px;
 }
-.canadian-leaf {
-  color: red;
-}
-.btn-branding {
+
+.btn-branding,
+.btn-explore {
   background-color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
@@ -67,7 +79,13 @@ p {
 
   transition: transform 0.3s;
 }
-.btn-branding:hover {
+.btn-explore {
+  height: 50px;
+  width: 250px;
+}
+
+.btn-branding:hover,
+.btn-explore:hover {
   transform: translateY(-10px);
   border: 2px solid var(--branding-color);
   color: var(--branding-color);
@@ -76,28 +94,64 @@ p {
   font-family: var(--default-font-family);
   color: white;
 }
-.about h1 {
+.page-title h1 {
+  background: radial-gradient(rgb(255, 255, 255) 54%, rgb(255, 193, 7) 100%);
   text-align: center;
-  font-size: 70px;
+  font-size: 80px;
   font-weight: bold;
-  margin-top: 50px;
+  padding-top: 20px;
+  padding: 100px 20px;
 }
 
-.emoji-1,
-.emoji-2,
-.emoji-3 {
-  margin-top: 100px;
+.container {
+  animation: transitionIn 1s;
+  padding-bottom: 50px;
+}
+.about-content {
+  display: flex;
+  margin-left: 100px;
+}
+
+.self-pic {
+  float: top;
+  max-width: 20%;
+  margin-top: 50px;
+  margin-left: 100px;
+  border-radius: 30%;
+}
+
+.emoji,
+.emoji,
+.emoji {
+  margin-top: 70px;
   margin-bottom: 15px;
   transform: scale(2);
 }
 
-.label {
+.characteristics-label {
   font-family: var(--default-font-family);
   font-size: 24px;
   font-weight: bold;
   color: var(--branding-color);
 }
-.text {
+.characteristics-text {
   font-family: var(--default-font-family);
   font-size: 18px;
+}
+#about-text {
+  margin-top: 100px;
+}
+
+/* .verticle-line {
+  width: 5px;
+  height: 120px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 550px;
+  left: 540px;
+} */
+.btn-explore {
+  position: relative;
+  top: 330px;
+  right: 600px;
 }
