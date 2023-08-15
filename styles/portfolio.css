@@ -113,10 +113,6 @@ p {
 }
 
 .self-pic {
-  float: top;
-  max-width: 20%;
-  margin-top: 50px;
-  margin-left: 100px;
   border-radius: 30%;
 }
 
@@ -140,18 +136,4 @@ p {
 }
 #about-text {
   margin-top: 100px;
-}
-
-/* .verticle-line {
-  width: 5px;
-  height: 120px;
-  background-color: var(--secondary-color);
-  position: absolute;
-  top: 550px;
-  left: 540px;
-} */
-.btn-explore {
-  position: relative;
-  top: 330px;
-  right: 600px;
 }
