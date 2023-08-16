@@ -34,17 +34,19 @@ p {
   font-size: 18px;
   color: var(--branding-color);
 }
-
+.index-body {
+  background-color: var(--secondary-color);
+  background-image: url("/images/leaves.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .active {
   text-shadow: rgb(254, 233, 131) 1px 0 10px;
 }
 .hero {
-  background-color: var(--secondary-color);
-  background-image: url("/images/leaves.jpg");
-
   text-align: center;
-  padding-top: 20px;
-  padding: 100px 20px;
+  margin: 0 auto;
+  padding: 200px 20px;
 }
 
 .hero p {
@@ -58,6 +60,8 @@ p {
   font-size: 96px;
   font-weight: bold;
   margin-bottom: 20px;
+  text-shadow: 10px 2px 15px #fff;
+  /* -webkit-text-stroke: 2px #fff; */
 }
 
 .hero h2 {
@@ -65,6 +69,7 @@ p {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 50px;
+  text-shadow: 10px 2px 15px #fff;
 }
 
 .btn-branding,
@@ -138,5 +143,5 @@ p {
   font-size: 18px;
 }
 .about-paragraph {
-  margin-top: 150px;
+  margin-top: 100px;
 }
