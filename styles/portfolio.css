@@ -103,7 +103,7 @@ h6 {
 
 .about p {
   font-family: var(--default-font-family);
-  margin-top: 150px;
+  margin-top: 170px;
   padding: 20px;
   font-weight: bold;
   font-size: 18px;
@@ -153,10 +153,27 @@ h6 {
 .item {
   padding: 20px;
 }
+
 .connect-icons {
   transform: scale(5);
 }
 .connect-icons:hover {
   text-shadow: #ffc107 0px 3px 15px;
   cursor: pointer;
+}
+.email-adress {
+  color: black;
+  text-shadow: 3px 3px 10px rgba(255, 255, 255, 1);
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  text-shadow: 3px 3px 10px rgba(255, 255, 255, 1);
+  transform: scale(2);
+}
+.footer-icons a {
+  color: rgb(93, 55, 55);
+}
+.footer-icons a:hover {
+  transform: translateY(-10px);
 }
