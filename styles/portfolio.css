@@ -26,9 +26,9 @@ h6 {
   color: var(--branding-color);
 }
 
-p {
+.about p {
   font-family: var(--default-font-family);
-  margin: 10px 50px;
+  margin-top: 130px;
   padding: 20px;
   font-weight: bold;
   font-size: 18px;
@@ -47,13 +47,6 @@ p {
   text-align: center;
   margin: 0 auto;
   padding: 200px 20px;
-}
-
-.hero p {
-  font-family: var(--default-font-family);
-  font-size: 36px;
-  font-weight: bold;
-  color: var(--branding-color);
 }
 
 .hero h1 {
@@ -144,4 +137,24 @@ p {
 }
 .about-paragraph {
   margin-top: 100px;
+}
+
+.project-content h3 {
+  margin-top: 20px;
+}
+.project-content p {
+  margin-bottom: 50px;
+  font-family: var(--default-font-family);
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--branding-color);
+  opacity: 0.7;
+}
+
+.project-content img {
+  margin-top: 100px;
+}
+
+.item {
+  padding: 20px;
 }
